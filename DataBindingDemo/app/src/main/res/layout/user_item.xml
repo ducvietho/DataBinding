@@ -3,7 +3,8 @@
     <data>
         <variable
             name="user"
-            type="com.example.ducviet.databindingdemo.manager.RecyclerUserAdapter.ViewHolderUser"/>
+            type="com.example.ducviet.databindingdemo.data.model.User"/>
+
     </data>
 
     <LinearLayout
@@ -22,7 +23,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@{user.mName}"
+                android:text="@{user.name}"
                 android:gravity="center_vertical"/>
         </LinearLayout>
         <LinearLayout
@@ -38,9 +39,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@{user.mAddress}"
-                android:gravity="center_vertical"/>
-        </LinearLayout>dp
+                android:gravity="center_vertical"
+                android:text="@{user.address}"/>
+        </LinearLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
